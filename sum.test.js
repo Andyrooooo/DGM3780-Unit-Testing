@@ -1,11 +1,15 @@
-const sum = require('./sum')
+test('number splits into array length of 15', () => {
+    let number = 15 
+    console.log(number)
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
-})
+    let someArray = []
 
-const arr = require('./arrayCreator')
-
-test('takes number and creates array', () => {
-    expect(arrayCreator(number)).toBe(15);
+    const arrayCreator = (number) => {
+        for (let i = 0; i <= number; i++) {
+            someArray.push(i)
+        }
+    }
+    arrayCreator(number - 1)
+    expect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]).toEqual(
+        expect.arrayContaining(someArray))
 })

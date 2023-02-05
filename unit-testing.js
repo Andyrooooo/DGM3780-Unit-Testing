@@ -1,5 +1,5 @@
 /* let number = Math.trunc(Math.random() * 15)
-console.log(number) */
+console.log(number)
 
 let someArray = []
 
@@ -8,7 +8,19 @@ const arrayCreator = (number) => {
         someArray.push(i)
     }
 }
-arrayCreator(15)
-console.log(someArray)
+arrayCreator(number - 1)
+console.log(someArray) */
 
-module.exports = arrayCreator
+
+    let number = 15 //Math.trunc(Math.random() * 15)
+    console.log(number)
+
+    let someArray = []
+
+    const arrayCreator = (number) => {
+        for (let i = 0; i <= number; i++) {
+            someArray.push(i)
+        }
+    }
+    arrayCreator(number - 1)
+    console.log(someArray)
