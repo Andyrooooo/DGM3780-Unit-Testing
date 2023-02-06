@@ -14,7 +14,7 @@ console.log(someArray) */
 
     //let number = 15 //Math.trunc(Math.random() * 30) //let number = 15
     //console.log(number)
-    let someArray = []
+ /*    let someArray = []
 
     const fizzBuzz = () => {
         for (let i = 1; i <= 15; i++) {
@@ -30,18 +30,10 @@ console.log(someArray) */
         }
     }
     fizzBuzz()
-    console.log(i)
-
-    
+    console.log(i) */
 
 
-    //console.log(someArray2)
-
-    /* if (i % 5 === 0) {
-                someArray.pop()
-                someArray.push(buzz)
-            }
-            if (i % 15 === 0) {
-                someArray.pop()
-                someArray.push(fizzBuzz)
-            } */
+let plus = (a, b, c) => {
+    return a + b + c
+}
+console.log(plus(100, 2, 40))

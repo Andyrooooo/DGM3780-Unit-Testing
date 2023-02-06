@@ -12,7 +12,7 @@
     arrayCreator(number - 1)
     expect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]).toEqual(
         expect.arrayContaining(someArray))
-}) */
+})
 
 
 
@@ -38,4 +38,11 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
     fizzBuzz()
     expect([1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzBuzz']).toEqual(
         expect.arrayContaining(someArray))
-})
+}) */
+
+test("will add a, b, and c together"), () => {
+    let plus = (a, b, c) => {
+        return a + b - d
+    }
+    expect(plus(10, 38, 19).toBe(68)
+)}
