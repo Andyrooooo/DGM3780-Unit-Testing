@@ -31,7 +31,7 @@ console.log(someArray) */
     }
    */
 
-function roomSize(width, height) {
+/* function roomSize(width, height) {
     let room = width * height
         if (room === 100) {
             console.log("The bed will fit")
@@ -40,4 +40,18 @@ function roomSize(width, height) {
         } 
     return room
 }
-console.log(roomSize(20, 10))
+console.log(roomSize(20, 10)) */
+
+function reverse(word) {
+    let hello = word
+
+    let reverseOrder = ""
+
+    for (let i = hello.length - 1; i >= 0; i--) {
+        reverseOrder += hello[i]
+    }
+    return reverseOrder
+}
+
+
+console.log(reverse("hows it going"))

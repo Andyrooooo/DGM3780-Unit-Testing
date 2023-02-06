@@ -109,9 +109,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 }) */
 
 
-// ------------------------------------To the power of test #7----------------------------------------
+// ------------------------------------room size test using "is not" (!==) #7----------------------------------------
 
-test('Tells you the size of the room and console.logs with "its not going to fit"', () => {
+/* test('Tells you the size of the room and console.logs with "its not going to fit"', () => {
     const consoleSpy = jest.spyOn(console, 'log')
 
     function roomSize(width, height) {
@@ -126,4 +126,24 @@ test('Tells you the size of the room and console.logs with "its not going to fit
 
     expect(roomSize(20, 10)).toBe(200);
     expect(consoleSpy).toHaveBeenCalledWith('Its not going to fit');
+}) */
+
+
+
+
+// ------------------------------------reverse string function #9----------------------------------------
+test('function will reverse function to be "no gniog stahw aohW" ', () => {
+
+    function reverse(word) {
+        let hello = word
+    
+        let reverseOrder = ""
+    
+        for (let i = hello.length - 1; i >= 0; i--) {
+            reverseOrder += hello[i]
+        }
+        return reverseOrder
+    }
+
+expect(reverse("whoa whats going on")).toBe("no gniog stahw aohW");
 })
