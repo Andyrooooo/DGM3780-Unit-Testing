@@ -48,10 +48,26 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 )} */
 
 
-test.todo('will add the current year and your birthyear to give us your age'), () => {
+/* test.todo('will add the current year and your birthyear to give us your age'), () => {
     function myAge(currentYear, ageBorn) {
         return currentYear - ageBorn
     }
 
     expect(myAge(2023, 1985).toBe(38)
+)} */
+
+
+test.todo('tells you how many pieces of fruit you need to make a juice'), () => {
+    function cutFruitPieces(fruit) {
+        return fruit * 4
+    }
+    
+    function fruitProcessor(oranges) {
+        const orangePieces = cutFruitPieces(oranges)
+    
+        let juice = `I need ${orangePieces} to make my juice`
+        return juice
+    }
+
+    expect(fruitProcessor(5).toBe(20)
 )}
