@@ -68,7 +68,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 // ------------------------------------multiplication test #4----------------------------------------
 
-test('tells you how many pieces of fruit you need to make a juice', () => {
+/* test('tells you how many pieces of fruit you need to make a juice', () => {
     function cutFruitPieces(fruit) {
         return fruit * 4
     }
@@ -82,15 +82,15 @@ test('tells you how many pieces of fruit you need to make a juice', () => {
 
     expect(fruitProcessor(5)).toBe(20)
 })
-
+ */
 
 
 // ------------------------------------test 5----------------------------------------
 
-/* test('divide how many nails you have by how many each board needs to get how many boards we can put together'), () => {
+test('divide how many nails you have by how many each board needs to get how many boards we can put together', () => {
     function buildMyTreehouse(nailsPerboard, nailsIHave) {
         return nailsIHave / nailsPerboard
     }
 
-    expect(buildMyTreehouse(250, 5).toBe(25)
-)} */
+    expect(buildMyTreehouse(250, 5)).toBe(25)
+})
