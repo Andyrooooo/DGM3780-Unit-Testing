@@ -111,17 +111,19 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 // ------------------------------------To the power of test #7----------------------------------------
 
-test('Tells you if your bed will fit in the room', () => {
+test('Tells you the size of the room and console.logs with "its not going to fit"', () => {
+    const consoleSpy = jest.spyOn(console, 'log')
+
     function roomSize(width, height) {
         let room = width * height
             if (room === 100) {
-                console.log("The bed will fit")
+                console.log('The bed will fit')
             } else if (room !== 100) {
-                console.log("It's not going to fit")
+                console.log('Its not going to fit')
             } 
         return room
     }
-    console.log(roomSize(20, 10))
 
-    expect(roomSize(20, 10)).toBe(200)
+    expect(roomSize(20, 10)).toBe(200);
+    expect(consoleSpy).toHaveBeenCalledWith('Its not going to fit');
 })
