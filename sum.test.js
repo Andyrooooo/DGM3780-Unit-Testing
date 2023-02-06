@@ -57,7 +57,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 )} */
 
 
-test.todo('tells you how many pieces of fruit you need to make a juice'), () => {
+/* test.todo('tells you how many pieces of fruit you need to make a juice'), () => {
     function cutFruitPieces(fruit) {
         return fruit * 4
     }
@@ -70,4 +70,13 @@ test.todo('tells you how many pieces of fruit you need to make a juice'), () => 
     }
 
     expect(fruitProcessor(5).toBe(20)
+)} */
+
+
+test.todo('divide how many nails you have by how many each board needs to get how many boards we can put together'), () => {
+    function buildMyTreehouse(nailsPerboard, nailsIHave) {
+        return nailsIHave / nailsPerboard
+    }
+
+    expect(buildMyTreehouse(250, 8).toBe()
 )}
