@@ -39,13 +39,13 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
         expect.arrayContaining(someArray))
 }) */
 
-/* test.todo('will add a, b, and c together'), () => {
+test('add a, b, and c together', () => {
     function plus(a, b, c) {
         return a + b + c
     }
 
-    expect(plus(10, 57, 120).toBe(187)
-)} */
+    expect(plus(10, 57, 120)).toBe(187)
+})
 
 
 /* test.todo('will add the current year and your birthyear to give us your age'), () => {
@@ -73,10 +73,10 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 )} */
 
 
-test.todo('divide how many nails you have by how many each board needs to get how many boards we can put together'), () => {
+/* test('divide how many nails you have by how many each board needs to get how many boards we can put together'), () => {
     function buildMyTreehouse(nailsPerboard, nailsIHave) {
         return nailsIHave / nailsPerboard
     }
 
-    expect(buildMyTreehouse(250, 8).toBe()
-)}
+    expect(buildMyTreehouse(250, 5).toBe(25)
+)} */
