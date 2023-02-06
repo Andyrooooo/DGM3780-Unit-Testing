@@ -48,7 +48,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 )} */
 
 
-test.todo('will add a, b, and c together'), () => {
+test.todo('will add the current year and your birthyear to give us your age'), () => {
     function myAge(currentYear, ageBorn) {
         return currentYear - ageBorn
     }
