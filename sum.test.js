@@ -23,7 +23,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
     let someArray = []
 
     const fizzBuzz = () => {
-        for (let i = 1; i <= 16; i++) {
+        for (let i = 1; i <= 15; i++) {
              if (i % 3 === 0) {
                 someArray.push("fizz")
             } else if (i % 5 === 0) {
@@ -36,6 +36,6 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
         }
     }
     fizzBuzz()
-    expect([1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzBuzz', 16]).toEqual(
+    expect([1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzBuzz']).toEqual(
         expect.arrayContaining(someArray))
 })
