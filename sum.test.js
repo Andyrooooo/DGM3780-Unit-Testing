@@ -21,21 +21,18 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
     //console.log(number)
 
     let someArray = []
-    let fizz = "fizz"
-    let buzz = "buzz"
-    let fizzbuzz = "fizzBuzz"
 
     const fizzBuzz = () => {
         for (let i = 0; i <= 16; i++) {
              if (i % 3 === 0) {
                 someArray.pop()
-                someArray.push(fizz)
+                someArray.push("fizz")
             } if (i % 5 === 0) {
                 someArray.pop()
-                someArray.push(buzz)
+                someArray.push("buzz")
             }  if (i % 15 === 0) {
                 someArray.pop()
-                someArray.push(fizzbuzz)
+                someArray.push("fizzBuzz")
             }   else {
                 someArray.push(i)
             }
