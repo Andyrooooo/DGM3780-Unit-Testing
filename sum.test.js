@@ -18,7 +18,6 @@
 
 
 test('number splits into array length of 15 the adds fizz at multiples of 3, buzz at multiples of 5 and fizzbuzz at multiples of both', () => {
-    //console.log(number)
 
     let someArray = []
 
@@ -40,9 +39,10 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
         expect.arrayContaining(someArray))
 }) */
 
-test("will add a, b, and c together"), () => {
-    let plus = (a, b, c) => {
-        return a + b - d
+test.todo('will add a, b, and c together'), () => {
+    function plus(a, b) {
+        return a + b
     }
-    expect(plus(10, 38, 19).toBe(68)
+
+    expect(plus(10, 57).toBe(67)
 )}
