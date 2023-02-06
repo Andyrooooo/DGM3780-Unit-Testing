@@ -1,4 +1,4 @@
-//----------------------------- test 1 part 1--------------------------------------
+//----------------------------- fizzbuzz array test part 1--------------------------------------
 
 /* test('number splits into array length of 15', () => {
     let number = 15 
@@ -17,7 +17,7 @@
 })
 
 
-// ------------------------------test 1 part 2--------------------------------------
+// ------------------------------fizzbuzz array test part 2--------------------------------------
 
 test('number splits into array length of 15 the adds fizz at multiples of 3, buzz at multiples of 5 and fizzbuzz at multiples of both', () => {
 
@@ -42,7 +42,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 }) */
 
 
-// -----------------------------------test 2---------------------------------------
+// -----------------------------------addition test #2---------------------------------------
 
 /* test('add a, b, and c together', () => {
     function plus(a, b, c) {
@@ -54,21 +54,21 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
  */
 
 
-// ------------------------------------test 3----------------------------------------
+// ------------------------------------subtraction test #3----------------------------------------
 
-test('will add the current year and your birthyear to give us your age', () => {
+/* test('will add the current year and your birthyear to give us your age', () => {
     function myAge(currentYear, ageBorn) {
         return currentYear - ageBorn
     }
 
     expect(myAge(2023, 1985)).toBe(38)
-})
+}) */
 
 
 
-// ------------------------------------test 4----------------------------------------
+// ------------------------------------multiplication test #4----------------------------------------
 
-/* test.todo('tells you how many pieces of fruit you need to make a juice'), () => {
+test('tells you how many pieces of fruit you need to make a juice', () => {
     function cutFruitPieces(fruit) {
         return fruit * 4
     }
@@ -76,12 +76,12 @@ test('will add the current year and your birthyear to give us your age', () => {
     function fruitProcessor(oranges) {
         const orangePieces = cutFruitPieces(oranges)
     
-        let juice = `I need ${orangePieces} to make my juice`
+        let juice = orangePieces
         return juice
     }
 
-    expect(fruitProcessor(5).toBe(20)
-)} */
+    expect(fruitProcessor(5)).toBe(20)
+})
 
 
 

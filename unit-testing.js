@@ -33,7 +33,15 @@ console.log(someArray) */
     console.log(i) */
 
 
-let plus = (a, b, c) => {
-    return a + b + c
-}
-console.log(plus(100, 2, 40))
+    function cutFruitPieces(fruit) {
+        return fruit * 4
+    }
+    
+    function fruitProcessor(oranges) {
+        const orangePieces = cutFruitPieces(oranges)
+    
+        let juice = `I need ${orangePieces} to make my juice`
+        return juice
+    }
+
+    console.log(fruitProcessor(10))
