@@ -97,13 +97,31 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 
 
-// ------------------------------------To the power of test #6----------------------------------------
+// ------------------------------------exponentiation test #6----------------------------------------
 
-test('calculate BMI', () => {
+/* test('calculate BMI', () => {
     function myBmi(mass, height) {
         return (mass / height ** 2)
         //return Math.round(mass / height ** 2)
     }
 
     expect(myBmi(73, 1.75)).toBe(23.836734693877553)
+}) */
+
+
+// ------------------------------------To the power of test #7----------------------------------------
+
+test('Tells you if your bed will fit in the room', () => {
+    function roomSize(width, height) {
+        let room = width * height
+            if (room === 100) {
+                console.log("The bed will fit")
+            } else if (room !== 100) {
+                console.log("It's not going to fit")
+            } 
+        return room
+    }
+    console.log(roomSize(20, 10))
+
+    expect(roomSize(20, 10)).toBe(200)
 })

@@ -29,11 +29,15 @@ console.log(someArray) */
             }
         }
     }
-    fizzBuzz()
-    console.log(i) */
+   */
 
-
-    function myBmi(mass, height) {
-        return Math.round(mass / height ** 2)
-    }
-    console.log(myBmi(73, 1.75))
+function roomSize(width, height) {
+    let room = width * height
+        if (room === 100) {
+            console.log("The bed will fit")
+        } else if (room !== 100) {
+            console.log("It's not going to fit")
+        } 
+    return room
+}
+console.log(roomSize(20, 10))
