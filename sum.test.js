@@ -85,12 +85,25 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
  */
 
 
-// ------------------------------------test 5----------------------------------------
+// ------------------------------------division test #5----------------------------------------
 
-test('divide how many nails you have by how many each board needs to get how many boards we can put together', () => {
-    function buildMyTreehouse(nailsPerboard, nailsIHave) {
+/* test('divide how many nails you have by how many each board needs to get how many boards we can put together', () => {
+    function buildMyTreehouse(nailsIHave, nailsPerboard) {
         return nailsIHave / nailsPerboard
     }
 
-    expect(buildMyTreehouse(250, 5)).toBe(25)
+    expect(buildMyTreehouse(250, 5)).toBe(50)
+}) */
+
+
+
+// ------------------------------------To the power of test #6----------------------------------------
+
+test('calculate BMI', () => {
+    function myBmi(mass, height) {
+        BMI = mass / height ** 2
+    }
+
+    myBmi(mass, height)
+    expect(myBmi(73, 1.75)).toBe(23.9)
 })
