@@ -33,15 +33,7 @@ console.log(someArray) */
     console.log(i) */
 
 
-    function cutFruitPieces(fruit) {
-        return fruit * 4
+    function myBmi(mass, height) {
+        return Math.round(mass / height ** 2)
     }
-    
-    function fruitProcessor(oranges) {
-        const orangePieces = cutFruitPieces(oranges)
-    
-        let juice = `I need ${orangePieces} to make my juice`
-        return juice
-    }
-
-    console.log(fruitProcessor(10))
+    console.log(myBmi(73, 1.75))

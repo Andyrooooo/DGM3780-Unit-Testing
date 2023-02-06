@@ -101,9 +101,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 test('calculate BMI', () => {
     function myBmi(mass, height) {
-        BMI = mass / height ** 2
+        return (mass / height ** 2)
+        //return Math.round(mass / height ** 2)
     }
 
-    myBmi(mass, height)
-    expect(myBmi(73, 1.75)).toBe(23.9)
+    expect(myBmi(73, 1.75)).toBe(23.836734693877553)
 })
