@@ -1,3 +1,5 @@
+//----------------------------- test 1 part 1--------------------------------------
+
 /* test('number splits into array length of 15', () => {
     let number = 15 
     console.log(number)
@@ -15,7 +17,7 @@
 })
 
 
-
+// ------------------------------test 1 part 2--------------------------------------
 
 test('number splits into array length of 15 the adds fizz at multiples of 3, buzz at multiples of 5 and fizzbuzz at multiples of both', () => {
 
@@ -39,23 +41,32 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
         expect.arrayContaining(someArray))
 }) */
 
-test('add a, b, and c together', () => {
+
+// -----------------------------------test 2---------------------------------------
+
+/* test('add a, b, and c together', () => {
     function plus(a, b, c) {
         return a + b + c
     }
 
     expect(plus(10, 57, 120)).toBe(187)
 })
+ */
 
 
-/* test.todo('will add the current year and your birthyear to give us your age'), () => {
+// ------------------------------------test 3----------------------------------------
+
+test('will add the current year and your birthyear to give us your age', () => {
     function myAge(currentYear, ageBorn) {
         return currentYear - ageBorn
     }
 
-    expect(myAge(2023, 1985).toBe(38)
-)} */
+    expect(myAge(2023, 1985)).toBe(38)
+})
 
+
+
+// ------------------------------------test 4----------------------------------------
 
 /* test.todo('tells you how many pieces of fruit you need to make a juice'), () => {
     function cutFruitPieces(fruit) {
@@ -72,6 +83,9 @@ test('add a, b, and c together', () => {
     expect(fruitProcessor(5).toBe(20)
 )} */
 
+
+
+// ------------------------------------test 5----------------------------------------
 
 /* test('divide how many nails you have by how many each board needs to get how many boards we can put together'), () => {
     function buildMyTreehouse(nailsPerboard, nailsIHave) {
