@@ -26,9 +26,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
         for (let i = 1; i <= 16; i++) {
              if (i % 3 === 0) {
                 someArray.push("fizz")
-            } if (i % 5 === 0) {
+            } else if (i % 5 === 0) {
                 someArray.push("buzz")
-            }  if (i % 15 === 0) {
+            } else if (i % 15 === 0) {
                 someArray.push("fizzBuzz")
             }   else {
                 someArray.push(i)
