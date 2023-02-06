@@ -19,21 +19,20 @@ console.log(someArray) */
     const fizzBuzz = () => {
         for (let i = 1; i <= 16; i++) {
              if (i % 3 === 0) {
-                someArray.pop()
                 someArray.push("fizz")
-            } if (i % 5 === 0) {
-                someArray.pop()
+            } else if (i % 5 === 0) {
                 someArray.push("buzz")
-            }  if (i % 15 === 0) {
-                someArray.pop()
+            } else if (i % 15 === 0) {
                 someArray.push("fizzBuzz")
-            }   else {
+            } else {
                 someArray.push(i)
             }
         }
     }
     fizzBuzz()
     console.log(someArray) 
+
+    
 
 
     //console.log(someArray2)
