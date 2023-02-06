@@ -40,9 +40,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 }) */
 
 test.todo('will add a, b, and c together'), () => {
-    function plus(a, b) {
-        return a + b
+    function plus(a, b, c) {
+        return a + b + c
     }
 
-    expect(plus(10, 57).toBe(67)
+    expect(plus(10, 57, 120).toBe(187)
 )}
