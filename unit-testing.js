@@ -12,32 +12,31 @@ arrayCreator(number - 1)
 console.log(someArray) */
 
 
-    let number = 16 //Math.trunc(Math.random() * 30) //let number = 15
+    //let number = 15 //Math.trunc(Math.random() * 30) //let number = 15
     //console.log(number)
-
     let someArray = []
-    let fizz = "fizz"
-    let buzz = "buzz"
-    let fizzbuzz = "fizzBuzz"
-
-    const fizzBuzz = (number) => {
-        for (let i = 0; i <= number; i++) {
+   
+    const fizzBuzz = () => {
+        for (let i = 1; i <= 16; i++) {
              if (i % 3 === 0) {
                 someArray.pop()
-                someArray.push(fizz)
+                someArray.push("fizz")
             } if (i % 5 === 0) {
                 someArray.pop()
-                someArray.push(buzz)
+                someArray.push("buzz")
             }  if (i % 15 === 0) {
                 someArray.pop()
-                someArray.push(fizzbuzz)
+                someArray.push("fizzBuzz")
             }   else {
                 someArray.push(i)
             }
         }
     }
-    fizzBuzz(number)
-    console.log(someArray)
+    fizzBuzz()
+    console.log(someArray) 
+
+
+    //console.log(someArray2)
 
     /* if (i % 5 === 0) {
                 someArray.pop()
