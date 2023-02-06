@@ -24,13 +24,13 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
     const fizzBuzz = () => {
         for (let i = 1; i <= 15; i++) {
-             if (i % 3 === 0) {
+            if (i % 15 === 0) {
+                someArray.push("fizzBuzz")
+            } else if (i % 3 === 0) {
                 someArray.push("fizz")
             } else if (i % 5 === 0) {
                 someArray.push("buzz")
-            } else if (i % 15 === 0) {
-                someArray.push("fizzBuzz")
-            }   else {
+            } else {
                 someArray.push(i)
             }
         }

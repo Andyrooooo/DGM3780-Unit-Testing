@@ -15,22 +15,22 @@ console.log(someArray) */
     //let number = 15 //Math.trunc(Math.random() * 30) //let number = 15
     //console.log(number)
     let someArray = []
-   
+
     const fizzBuzz = () => {
-        for (let i = 1; i <= 16; i++) {
-             if (i % 3 === 0) {
+        for (let i = 1; i <= 15; i++) {
+            if (i % 15 === 0) {
+                someArray.push("fizzBuzz")
+            } else if (i % 3 === 0) {
                 someArray.push("fizz")
             } else if (i % 5 === 0) {
                 someArray.push("buzz")
-            } else if (i % 15 === 0) {
-                someArray.push("fizzBuzz")
-            } else {
+            }  else {
                 someArray.push(i)
             }
         }
     }
     fizzBuzz()
-    console.log(someArray) 
+    console.log(i)
 
     
 
