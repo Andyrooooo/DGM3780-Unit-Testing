@@ -197,5 +197,5 @@ test('function to remove vowels', () => {
         return word
     }
 
-expect(vowels("hey how is it going")).toMatch(/hy hw s t gng/);
+expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
 })
