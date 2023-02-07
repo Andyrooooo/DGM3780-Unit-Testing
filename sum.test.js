@@ -150,7 +150,7 @@ expect(reverse("hello")).toMatch(/olleh/);
 
 
 // ------------------------------------uppercase string function #10----------------------------------------
-test('function to change string to uppercase ', () => {
+/* test('function to change string to uppercase ', () => {
     function upperCase(word) {
         let newWord = word
 
@@ -159,5 +159,9 @@ test('function to change string to uppercase ', () => {
         return upper
     }
 
-expect(upperCase("hello")).toMatch(/HELLO/);
-})
+expect(upperCase("hey hows it going")).toMatch(/HEY HOWS IT GOING/);
+}) */
+
+// ------------------------------------Removes vowels function #11----------------------------------------
+
+

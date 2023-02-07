@@ -41,7 +41,7 @@ console.log(someArray) */
     return room
 }
 console.log(roomSize(20, 10)) */
-
+/* 
 function reverse(word) {
     let hello = word
 
@@ -51,11 +51,11 @@ function reverse(word) {
         reverseOrder += hello[i]
     }
     return reverseOrder
-}
+} */
 //console.log(reverse("hello"))
 
 
-function upperCase(word) {
+/* function upperCase(word) {
     let newWord = word
 
     let upper = newWord.toUpperCase()
@@ -63,4 +63,25 @@ function upperCase(word) {
     return upper
 }
 
-console.log(upperCase("hello"))
+console.log(upperCase("hello")) */
+
+
+function vowel(word) {
+    
+    word = word.replace(/a/g,'')
+    word = word.replace(/e/g,'')
+    word = word.replace(/i/g,'')
+    word = word.replace(/o/g,'')
+    word = word.replace(/u/g,'')
+
+    return word
+}
+
+console.log(vowel("hey how is it going"))
+
+
+
+let words = "helloooo"
+words.replace('e', '')
+words = words.replace(/o/g, '')
+console.log(words)
