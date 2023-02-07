@@ -47,8 +47,8 @@ function reverse(word) {
 
     let reverseOrder = ""
 
-    for (let i = hello.length - 1; i >= 0; i--) {
-        reverseOrder += hello[i]
+    for (let i = hello.length - 1; i >= -5; i--) {
+        reverseOrder += hello[i] + 1
     }
     return reverseOrder
 }

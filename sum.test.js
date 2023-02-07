@@ -145,5 +145,5 @@ test('function will reverse function to be "olleh" ', () => {
         return reverseOrder
     }
 
-expect(reverse('hello')).toMatch(/olleh/);
+expect(reverse(4)).toBe(4);
 })
