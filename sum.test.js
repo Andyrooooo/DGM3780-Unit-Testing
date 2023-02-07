@@ -234,7 +234,7 @@ expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
 
 
 // ------------------------------------numbers function #12----------------------------------------
-test('function will add all the numbers in the array together into one value', () => {
+test('function will add all the numbers in the array together', () => {
 
     function arrayCalculator(theArray) {
     
