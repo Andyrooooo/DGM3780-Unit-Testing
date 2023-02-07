@@ -66,7 +66,7 @@ function reverse(word) {
 console.log(upperCase("hello")) */
 
 
-function vowel(word) {
+/* function vowel(word) {
     
     word = word.replace(/a/g,'')
     word = word.replace(/e/g,'')
@@ -77,11 +77,33 @@ function vowel(word) {
     return word
 }
 
-console.log(vowel("hey how is it going"))
+console.log(vowel("hey how is it going")) */
 
-
+/* 
 
 let words = "helloooo"
 words.replace('e', '')
 words = words.replace(/o/g, '')
-console.log(words)
+console.log(words) */
+
+
+const myContact = {
+    fullName: "andrew",
+    phone: 1234567890,
+    age: 45
+}
+
+function validateName(myContact, fullName) {
+
+    Object.keys(myContact)
+
+    if (myContact.fullName === fullName) {
+        console.log("They are one in the same")
+    } else {
+        console.log("They are not the same")
+    }
+
+    return fullName
+}
+
+console.log(validateName(myContact, "andrew"))

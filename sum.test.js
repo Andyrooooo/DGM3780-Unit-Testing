@@ -184,7 +184,7 @@ expect(upperCase("hey hows it going")).toMatch(/HEY HOWS IT GOING/);
 
 
 // ------------------------------------Removes vowels function #11----------------------------------------
-test('function to remove vowels', () => {
+/* test('function to remove vowels', () => {
 
     function vowels(word) {
         
@@ -198,4 +198,31 @@ test('function to remove vowels', () => {
     }
 
 expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
+}) */
+
+
+
+// ------------------------------------object validator function #12----------------------------------------
+test('function that will validate whether the entered string is a key of the object', () => {
+
+    const myContact = {
+        fullName: "andrew",
+        phone: 1234567890,
+        age: 45
+    }
+    
+    function validateName(myContact, fullName) {
+    
+        Object.keys(myContact)
+    
+        if (myContact.fullName === fullName) {
+            console.log("It is a key")
+        } else {
+            console.log("It is not a key")
+        }
+    
+        return fullName
+    }
+
+    expect(validateName("andrew")).toHaveBeenCalledWith('It is a key');
 })
