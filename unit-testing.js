@@ -47,11 +47,20 @@ function reverse(word) {
 
     let reverseOrder = ""
 
-    for (let i = hello.length - 1; i >= -5; i--) {
-        reverseOrder += hello[i] + 1
+    for (let i = hello.length - 1; i >= 0; i--) {
+        reverseOrder += hello[i]
     }
     return reverseOrder
 }
+//console.log(reverse("hello"))
 
 
-console.log(reverse("hello"))
+function upperCase(word) {
+    let newWord = word
+
+    let upper = newWord.toUpperCase()
+
+    return upper
+}
+
+console.log(upperCase("hello"))

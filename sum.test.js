@@ -132,7 +132,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 
 // ------------------------------------reverse string function #9----------------------------------------
-test('function will reverse function to be "olleh" ', () => {
+/* test('function will reverse function to be "olleh" ', () => {
 
     function reverse(word) {
         let hello = word
@@ -146,4 +146,18 @@ test('function will reverse function to be "olleh" ', () => {
     }
 
 expect(reverse("hello")).toMatch(/olleh/);
-})
+}) */
+
+
+// ------------------------------------uppercase string function #10----------------------------------------
+test('function to change string to uppercase ', () => {
+    function upperCase(word) {
+        let newWord = word
+
+        let upper = newWord.toUpperCase()
+
+        return upper
+    }
+
+expect(upperCase("hello")).toMatch(/HELLO/);
+
