@@ -17,6 +17,9 @@
 })
 
 
+
+
+
 // ------------------------------fizzbuzz array test part 2--------------------------------------
 
 test('number splits into array length of 15 the adds fizz at multiples of 3, buzz at multiples of 5 and fizzbuzz at multiples of both', () => {
@@ -42,6 +45,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 }) */
 
 
+
+
+
 // -----------------------------------addition test #2---------------------------------------
 
 /* test('add a, b, and c together', () => {
@@ -54,6 +60,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
  */
 
 
+
+
+
 // ------------------------------------subtraction test #3----------------------------------------
 
 /* test('will add the current year and your birthyear to give us your age', () => {
@@ -63,6 +72,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
     expect(myAge(2023, 1985)).toBe(38)
 }) */
+
 
 
 
@@ -85,6 +95,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
  */
 
 
+
+
+
 // ------------------------------------division test #5----------------------------------------
 
 /* test('divide how many nails you have by how many each board needs to get how many boards we can put together', () => {
@@ -94,6 +107,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
     expect(buildMyTreehouse(250, 5)).toBe(50)
 }) */
+
 
 
 
@@ -107,6 +121,9 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
     expect(myBmi(73, 1.75)).toBe(23.836734693877553)
 }) */
+
+
+
 
 
 // ------------------------------------room size test using "is not" (!==) #7----------------------------------------
@@ -149,6 +166,7 @@ expect(reverse("hello")).toMatch(/olleh/);
 }) */
 
 
+
 // ------------------------------------uppercase string function #10----------------------------------------
 /* test('function to change string to uppercase ', () => {
     function upperCase(word) {
@@ -162,6 +180,22 @@ expect(reverse("hello")).toMatch(/olleh/);
 expect(upperCase("hey hows it going")).toMatch(/HEY HOWS IT GOING/);
 }) */
 
+
+
+
 // ------------------------------------Removes vowels function #11----------------------------------------
+test('function to remove vowels', () => {
 
+    function vowels(word) {
+        
+        word = word.replace(/a/g,'')
+        word = word.replace(/e/g,'')
+        word = word.replace(/i/g,'')
+        word = word.replace(/o/g,'')
+        word = word.replace(/u/g,'')
 
+        return word
+    }
+
+expect(vowels("hey how is it going")).toMatch(/hy hw s t gng/);
+})
