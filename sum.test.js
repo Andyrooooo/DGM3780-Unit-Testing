@@ -160,4 +160,4 @@ test('function to change string to uppercase ', () => {
     }
 
 expect(upperCase("hello")).toMatch(/HELLO/);
-
+})
