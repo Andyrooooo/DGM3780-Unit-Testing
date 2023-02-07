@@ -203,7 +203,7 @@ expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
 
 
 // ------------------------------------object validator function #12----------------------------------------
-test('function that will validate whether the entered string is a key of the object', () => {
+/* test('function that will validate whether the entered string is a key of the object', () => {
     const consoleSpy = jest.spyOn(console, 'log')
 
     const myContact = {
@@ -228,4 +228,20 @@ test('function that will validate whether the entered string is a key of the obj
 
     expect(validateName(myContact, "andrew")).toMatch(/andrew/)
     expect(consoleSpy).toHaveBeenCalledWith('It is a key')
+}) */
+
+
+
+
+// ------------------------------------numbers function #12----------------------------------------
+test('function will add all the numbers in the array together into one value', () => {
+
+    function arrayCalculator(theArray) {
+    
+        let arrayAdded = theArray.reduce((a, b) => a + b)
+        
+        return arrayAdded
+    }
+
+    expect(arrayCalculator([1, 28, 5])).toBe(34)
 })

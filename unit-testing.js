@@ -87,7 +87,7 @@ words = words.replace(/o/g, '')
 console.log(words) */
 
 
-const myContact = {
+/* const myContact = {
     fullName: "Andrew",
     phone: 1234567890,
     age: 45
@@ -107,7 +107,7 @@ function validateName(myContact, fullName) {
     return myString
 }
 
-console.log(validateName(myContact, "Andrew"))
+console.log(validateName(myContact, "Andrew")) */
 
 
 // In here I was trying to turn the keys into an array to which I could then target
@@ -138,3 +138,14 @@ function validateName(myContact, fullName) {
 }
 
 console.log(validateName(myContact, "fullName")) */
+
+
+function arrayCalculator(theArray) {
+    console.log(theArray)
+
+    let arrayAdded = theArray.reduce((a, b) => a + b)
+    
+    return arrayAdded
+}
+
+console.log(arrayCalculator([1, 8, 20]))
