@@ -1,6 +1,6 @@
 //----------------------------- fizzbuzz array test part 1--------------------------------------
 
-/* test('number splits into array length of 15', () => {
+test('number splits into array length of 15', () => {
     let number = 15 
     console.log(number)
 
@@ -42,7 +42,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
     fizzBuzz()
     expect([1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz', 11, 'fizz', 13, 14, 'fizzBuzz']).toEqual(
         expect.arrayContaining(someArray))
-}) */
+})
 
 
 
@@ -50,14 +50,14 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 // -----------------------------------addition test #2---------------------------------------
 
-/* test('add a, b, and c together', () => {
+test('add a, b, and c together', () => {
     function plus(a, b, c) {
         return a + b + c
     }
 
     expect(plus(10, 57, 120)).toBe(187)
 })
- */
+
 
 
 
@@ -65,20 +65,20 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 // ------------------------------------subtraction test #3----------------------------------------
 
-/* test('will add the current year and your birthyear to give us your age', () => {
+test('will add the current year and your birthyear to give us your age', () => {
     function myAge(currentYear, ageBorn) {
         return currentYear - ageBorn
     }
 
     expect(myAge(2023, 1985)).toBe(38)
-}) */
+})
 
 
 
 
 // ------------------------------------multiplication test #4----------------------------------------
 
-/* test('tells you how many pieces of fruit you need to make a juice', () => {
+test('tells you how many pieces of fruit you need to make a juice', () => {
     function cutFruitPieces(fruit) {
         return fruit * 4
     }
@@ -92,7 +92,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
     expect(fruitProcessor(5)).toBe(20)
 })
- */
+
 
 
 
@@ -100,27 +100,27 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 // ------------------------------------division test #5----------------------------------------
 
-/* test('divide how many nails you have by how many each board needs to get how many boards we can put together', () => {
+test('divide how many nails you have by how many each board needs to get how many boards we can put together', () => {
     function buildMyTreehouse(nailsIHave, nailsPerboard) {
         return nailsIHave / nailsPerboard
     }
 
     expect(buildMyTreehouse(250, 5)).toBe(50)
-}) */
+})
 
 
 
 
 // ------------------------------------exponentiation test #6----------------------------------------
 
-/* test('calculate BMI', () => {
+test('calculate BMI', () => {
     function myBmi(mass, height) {
         return (mass / height ** 2)
         //return Math.round(mass / height ** 2)
     }
 
     expect(myBmi(73, 1.75)).toBe(23.836734693877553)
-}) */
+})
 
 
 
@@ -128,7 +128,7 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 // ------------------------------------room size test using "is not" (!==) #7----------------------------------------
 
-/* test('Tells you the size of the room and console.logs with "its not going to fit"', () => {
+test('Tells you the size of the room and console.logs with "its not going to fit"', () => {
     const consoleSpy = jest.spyOn(console, 'log')
 
     function roomSize(width, height) {
@@ -143,13 +143,13 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
     expect(roomSize(20, 10)).toBe(200);
     expect(consoleSpy).toHaveBeenCalledWith('Its not going to fit');
-}) */
+})
 
 
 
 
 // ------------------------------------reverse string function #9----------------------------------------
-/* test('function will reverse function to be "olleh" ', () => {
+test('function will reverse function to be "olleh" ', () => {
 
     function reverse(word) {
         let hello = word
@@ -163,12 +163,12 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
     }
 
 expect(reverse("hello")).toMatch(/olleh/);
-}) */
+})
 
 
 
 // ------------------------------------uppercase string function #10----------------------------------------
-/* test('function to change string to uppercase ', () => {
+test('function to change string to uppercase ', () => {
     function upperCase(word) {
         let newWord = word
 
@@ -178,13 +178,13 @@ expect(reverse("hello")).toMatch(/olleh/);
     }
 
 expect(upperCase("hey hows it going")).toMatch(/HEY HOWS IT GOING/);
-}) */
+})
 
 
 
 
 // ------------------------------------Removes vowels function #11----------------------------------------
-/* test('function to remove vowels', () => {
+test('function to remove vowels', () => {
 
     function vowels(word) {
         
@@ -198,12 +198,12 @@ expect(upperCase("hey hows it going")).toMatch(/HEY HOWS IT GOING/);
     }
 
 expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
-}) */
+})
 
 
 
 // ------------------------------------object validator function #12----------------------------------------
-/* test('function that will validate whether the entered string is a key of the object', () => {
+test('function that will validate whether the entered string is a key of the object', () => {
     const consoleSpy = jest.spyOn(console, 'log')
 
     const myContact = {
@@ -228,7 +228,7 @@ expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
 
     expect(validateName(myContact, "andrew")).toMatch(/andrew/)
     expect(consoleSpy).toHaveBeenCalledWith('It is a key')
-}) */
+})
 
 
 
