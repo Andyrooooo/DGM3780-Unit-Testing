@@ -54,4 +54,4 @@ function reverse(word) {
 }
 
 
-console.log(reverse("hows it going"))
+console.log(reverse("hello"))

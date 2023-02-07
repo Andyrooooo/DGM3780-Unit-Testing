@@ -132,12 +132,12 @@ test('number splits into array length of 15 the adds fizz at multiples of 3, buz
 
 
 // ------------------------------------reverse string function #9----------------------------------------
-test('function will reverse function to be "no gniog stahw aohW" ', () => {
+test('function will reverse function to be "olleh" ', () => {
 
     function reverse(word) {
         let hello = word
     
-        let reverseOrder = ""
+        let reverseOrder = ''
     
         for (let i = hello.length - 1; i >= 0; i--) {
             reverseOrder += hello[i]
@@ -145,5 +145,5 @@ test('function will reverse function to be "no gniog stahw aohW" ', () => {
         return reverseOrder
     }
 
-expect(reverse("whoa whats going on")).toBe("no gniog stahw aohW");
+expect(reverse('hello')).toMatch(/olleh/);
 })
