@@ -204,25 +204,28 @@ expect(vowels("hey how iiiiiis it going")).toMatch(/hy hw s t gng/);
 
 // ------------------------------------object validator function #12----------------------------------------
 test('function that will validate whether the entered string is a key of the object', () => {
+    const consoleSpy = jest.spyOn(console, 'log')
 
     const myContact = {
-        fullName: "andrew",
+        fullName: "Andrew",
         phone: 1234567890,
         age: 45
     }
     
     function validateName(myContact, fullName) {
     
-        Object.keys(myContact)
-    
-        if (myContact.fullName === fullName) {
+        let specialKey = myContact.fullName.toLowerCase()
+        let myString = fullName.toLowerCase()
+
+        if (specialKey === myString) {
             console.log("It is a key")
         } else {
-            console.log("It is not a key")
+            console.log("It is not a key, darn")
         }
-    
-        return fullName
-    }
 
-    expect(validateName("andrew")).toHaveBeenCalledWith('It is a key');
+        return myString
+        }
+
+    expect(validateName(myContact, "andrew")).toMatch(/andrew/)
+    expect(consoleSpy).toHaveBeenCalledWith('It is a key')
 })

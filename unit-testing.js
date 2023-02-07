@@ -88,22 +88,53 @@ console.log(words) */
 
 
 const myContact = {
-    fullName: "andrew",
+    fullName: "Andrew",
     phone: 1234567890,
     age: 45
 }
 
 function validateName(myContact, fullName) {
 
-    Object.keys(myContact)
+    let specialKey = myContact.fullName.toLowerCase()
+    let myString = fullName.toLowerCase()
 
-    if (myContact.fullName === fullName) {
-        console.log("They are one in the same")
+    if (specialKey === myString) {
+        console.log("yes")
     } else {
-        console.log("They are not the same")
+        console.log("no")
     }
 
-    return fullName
+    return myString
 }
 
-console.log(validateName(myContact, "andrew"))
+console.log(validateName(myContact, "Andrew"))
+
+
+// In here I was trying to turn the keys into an array to which I could then target
+// "fullName" and see if it would match the string fullName I would input when I 
+// would console.log
+/* const myContact = {
+    fullName: "Andrew",
+    phone: 1234567890,
+    age: 45
+}
+
+function validateName(myContact, fullName) {
+
+    keysToArrays = Object.keys.map()
+
+    console.log(keysToArrays)
+
+    //let specialKey = myContact.fullName.toLowerCase()
+    //let myString = fullName.toLowerCase()
+
+    if (specialKey === myString) {
+        console.log("yes")
+    } else {
+        console.log("no")
+    }
+
+    return myString
+}
+
+console.log(validateName(myContact, "fullName")) */
