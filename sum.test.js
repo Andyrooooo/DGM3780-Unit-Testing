@@ -233,7 +233,7 @@ test('function that will validate whether the entered string is a key of the obj
 
 
 
-// ------------------------------------numbers function #12----------------------------------------
+// ------------------------------------numbers function #13----------------------------------------
 test('function will add all the numbers in the array together', () => {
 
     function arrayCalculator(theArray) {

@@ -1,3 +1,5 @@
+/* ------------------------------------------------------------------------ scratch paper -------------------------------------------------------------------------- */
+
 /* let number = Math.trunc(Math.random() * 15)
 console.log(number)
 
@@ -140,7 +142,7 @@ function validateName(myContact, fullName) {
 console.log(validateName(myContact, "fullName")) */
 
 
-function arrayCalculator(theArray) {
+/* function arrayCalculator(theArray) {
     console.log(theArray)
 
     let arrayAdded = theArray.reduce((a, b) => a + b)
@@ -148,4 +150,4 @@ function arrayCalculator(theArray) {
     return arrayAdded
 }
 
-console.log(arrayCalculator([1, 8, 20]))
+console.log(arrayCalculator([1, 8, 20])) */
